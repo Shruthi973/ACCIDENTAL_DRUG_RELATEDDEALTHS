@@ -53,8 +53,7 @@ This machine learning project analyzes accidental drug-related deaths using toxi
 
 ## 📁 Repository Structure
 Accidental_Drug_Deaths/
-│
-├── Accidental_Drug_Deaths_Analysis.ipynb     # Cleaned and labeled Jupyter notebook
-├── Accidental_Drug_Related_Deaths.csv        # Input dataset
-└── README.md                                 # Project summary and documentation
+├── Accidental_Drug_Deaths_Analysis.ipynb
+├── Accidental_Drug_Related_Deaths.csv
+└── README.md
 
