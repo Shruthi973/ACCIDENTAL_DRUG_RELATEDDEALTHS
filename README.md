@@ -52,8 +52,27 @@ This machine learning project analyzes accidental drug-related deaths using toxi
 
 
 ## 📁 Repository Structure
-Accidental_Drug_Deaths/
-├── Accidental_Drug_Deaths_Analysis.ipynb
-├── Accidental_Drug_Related_Deaths.csv
-└── README.md
+## 📁 Files Included
+
+- `Accidental_Drug_Deaths_Analysis.ipynb2`: Jupyter notebook with full code and outputs  
+- `Accidental_Drug_Related_Deaths.csv`: Input dataset  
+- `README.md`: This file  
+
+## 🛠 Future Work
+
+- Integrate overdose timing or regional trends  
+- Use advanced techniques like XGBoost or survival models  
+- Deploy as a Flask web app for public health surveillance  
+Let me know if you want me to move on to SAR or Phenotype next.
+
+
+
+
+
+
+
+
+
+
+
 
