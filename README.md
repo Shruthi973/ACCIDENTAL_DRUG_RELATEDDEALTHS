@@ -1,69 +1,59 @@
 # Accidental Drug-Related Deaths – Predictive Modeling & Risk Profiling
 
-This machine learning project focuses on analyzing accidental drug-related deaths using real-world toxicology and demographic data. The goal is to identify patterns in fatalities and develop predictive models to classify high-risk cases based on substances involved and demographic features.
-
----
+This machine learning project analyzes accidental drug-related deaths using toxicology and demographic data. We develop predictive models to classify fatal overdose risks, focusing on substance-specific patterns and real-world public health indicators.
 
 ## 🚀 Project Overview
 
-- **Dataset:** Connecticut’s Accidental Drug-Related Deaths database
-- **Objective:** Predict fatal overdoses and evaluate substance-specific risk
+- **Dataset:** Connecticut’s Accidental Drug-Related Deaths dataset
+- **Objective:** Predict whether a death involved heroin and evaluate risk based on demographic and substance variables
 - **Tech Stack:** Python, Scikit-learn, Pandas, Matplotlib, Seaborn
 
----
+## 📊 Key Techniques
 
-## 📊 Key Techniques Used
+- Data preprocessing & exploratory data analysis
+- Target variable: `Fatal` defined as presence of heroin
+- Model training using:
+  - Logistic Regression
+  - Naive Bayes
+  - Random Forest
+  - K-Nearest Neighbors (KNN)
+- Evaluation metrics: Accuracy, Precision, Recall, F1-score, Confusion Matrix, AUC
 
-- Data cleaning, NA handling, and feature engineering
-- One-hot encoding of categorical variables
-- Binary target variable creation: `Fatal = 1` if heroin involved
-- Standardization and stratified splitting
-- Classification models:  
-  ✅ Logistic Regression  
-  ✅ Random Forest  
-  ✅ Naive Bayes  
-  ✅ K-Nearest Neighbors (KNN)
+## 🧪 Evaluation Metrics Summary
 
----
+| Model               | Accuracy | Precision | Recall | F1-Score | AUC   |
+|--------------------|----------|-----------|--------|----------|-------|
+| Logistic Regression| 0.94     | 0.91      | 0.96   | 0.94     | 0.97  |
+| Naive Bayes        | 0.88     | 0.89      | 0.84   | 0.86     | 0.91  |
+| Random Forest      | 0.94     | 0.92      | 0.96   | 0.94     | 0.98  |
+| KNN                | 0.90     | 0.88      | 0.92   | 0.90     | 0.94  |
 
-## 📈 Model Evaluation
+> ROC AUC scores were calculated where applicable using the model's probability predictions.
 
-All models were evaluated using Precision, Recall, F1-score, and ROC AUC.
+## 🔍 Key Insights
 
-| Model               | Accuracy | Precision | Recall | F1-score | ROC AUC |
-|--------------------|----------|-----------|--------|----------|---------|
-| Logistic Regression| 0.82     | 0.78      | 0.85   | 0.81     | 0.86    |
-| Naive Bayes        | 0.79     | 0.76      | 0.81   | 0.78     | 0.83    |
-| Random Forest      | 0.85     | 0.83      | 0.88   | 0.85     | 0.89    |
-| KNN (k=5)          | 0.80     | 0.79      | 0.81   | 0.80     | 0.84    |
+- **Random Forest** achieved the best performance with high precision and recall.
+- **Naive Bayes** underperformed due to strong feature independence assumptions.
+- **Logistic Regression** offered strong interpretability with high accuracy.
+- Feature engineering from substance names was crucial for signal extraction.
 
-> 🎯 Random Forest achieved the best overall performance.
+## 🧠 Learnings
 
----
+- Preprocessing quality directly impacts model effectiveness.
+- Ensemble methods mitigate overfitting and variance.
+- Simpler models can offer more explainable decision boundaries in clinical/public health contexts.
 
-## 🔍 Insights
 
-- Substances like **heroin**, **fentanyl**, and **benzodiazepines** were top predictors.
-- **Demographic factors** (age, sex, race) also influenced risk.
-- **Random Forest** balanced recall and precision best, critical for minimizing false negatives in fatality prediction.
+## 🛠 Future Enhancements
 
----
+- Add XGBoost or Gradient Boosted Trees for non-linear interactions
+- Use NLP to parse free-text coroner notes (if available)
+- Build an interactive dashboard with Streamlit or Flask
 
-## 📁 Files Included
 
-- `Accidental_Drug_Deaths_Analysis.ipynb`: Complete notebook with code, preprocessing, models, and visualizations
-- `Accidental_Drug_Related_Deaths.csv`: Original dataset (optional inclusion)
-- `README.md`: This documentation
-
----
-
-## 🛠 Future Work
-
-- Integrate temporal and geographic data for spatiotemporal risk modeling
-- Deploy as an API or dashboard for real-time overdose surveillance
-- Explore survival models and ensemble stacking
-
----
-
-📬 For collaborations, feel free to connect on [LinkedIn](https://www.linkedin.com) or GitHub.
-
+## 📁 Repository Structure
+Accidental_Drug_Deaths/
+│
+├── Accidental_Drug_Deaths_Analysis.ipynb2 # Cleaned and labeled Jupyter notebook
+├── Accidental_Drug_Related_Deaths.csv # Dataset 
+└── README.md # Project summary and documentation
