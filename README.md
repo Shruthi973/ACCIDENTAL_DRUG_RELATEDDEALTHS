@@ -1,8 +1,13 @@
-# 💊 Time-Series Simulation of Overdose Forecasting
+#  Time-Series Simulation of Overdose Forecasting
 
 This project simulates and forecasts overdose trends using a time-series machine learning pipeline. It aims to identify temporal patterns and behavioral risk signals to inform early intervention strategies for public health response.
 
 ---
+<p align="center">
+  <img src="ride.jpg" width="600"/>
+  <br>
+  <em>🧠 RIDE CANCELLED
+</p>
 
 ## 🧠 Project Overview
 
