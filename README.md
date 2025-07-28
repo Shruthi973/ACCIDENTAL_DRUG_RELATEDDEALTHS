@@ -4,7 +4,7 @@ This project simulates and forecasts overdose trends using a time-series machine
 
 ---
 <p align="center">
-  <img src="ride.jpg" width="600"/>
+  <img src="drug.jpg" width="600"/>
   <br>
   <em>🧠 RIDE CANCELLED
 </p>
